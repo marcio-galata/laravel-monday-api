@@ -23,11 +23,11 @@ Add the ServiceProvider and the Facade to your `config/app.php`:
 ```php
 'providers' => [
   ...
-  Proclame\Monday\MondayServiceProvider::class,
+  Galata\LaravelMondayAPI\MondayServiceProvider::class,
 ],
 'aliases' => [
   ...
-  'Monday' => Proclame\Monday\MondayFacade::class,
+  'Monday' => Galata\LaravelMondayAPI\MondayFacade::class,
 ]
 ```
 
@@ -61,7 +61,7 @@ $board_id = 10012;
 $boardColumns = Monday::on($board_id)->getColumns();
 
 # Create Board, if success return board_id
-$newboard = Monday::create( 'New Board Name', TBlack\MondayAPI\ObjectTypes\BoardKind::PUB );
+$newboard = Monday::create( 'New Board Name', Galata\LaravelMondayAPI\MondayAPI\ObjectTypes\BoardKind::PUB );
 $board_id = $newboard['create_board']['id'];
 
 ```
