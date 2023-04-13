@@ -3,8 +3,8 @@
 namespace Galata\LaravelMondayAPI;
 
 use Illuminate\Support\ServiceProvider;
-use TBlack\MondayAPI\Token;
-use TBlack\MondayAPI\MondayBoard;
+use Galata\LaravelMondayAPI\MondayAPI\Token;
+use Galata\LaravelMondayAPI\MondayAPI\MondayBoard;
 
 class MondayServiceProvider extends ServiceProvider
 {
@@ -27,8 +27,8 @@ class MondayServiceProvider extends ServiceProvider
     {
         $this->app->bind('monday', function ($app) {
             $token = env('MONDAY_TOKEN');
-            $MondayBoard = new TBlack\MondayAPI\MondayBoard();
-            $MondayBoard->setToken(new TBlack\MondayAPI\Token($token));
+            $MondayBoard = new Galata\LaravelMondayAPI\MondayAPI\MondayBoard();
+            $MondayBoard->setToken(new Galata\LaravelMondayAPI\MondayAPI\Token($token));
         });
     }
 
