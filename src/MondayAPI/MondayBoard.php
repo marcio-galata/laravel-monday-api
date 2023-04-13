@@ -1,13 +1,13 @@
 <?php
 
-namespace TBlack\MondayAPI;
+namespace Galata\LaravelMondayAPI\MondayAPI;
 
-use TBlack\MondayAPI\Querying\Query;
-use TBlack\MondayAPI\ObjectTypes\Item;
-use TBlack\MondayAPI\ObjectTypes\SubItem;
-use TBlack\MondayAPI\ObjectTypes\Board;
-use TBlack\MondayAPI\ObjectTypes\Column;
-use TBlack\MondayAPI\ObjectTypes\BoardKind;
+use Galata\LaravelMondayAPI\MondayAPI\Querying\Query;
+use Galata\LaravelMondayAPI\MondayAPI\ObjectTypes\Item;
+use Galata\LaravelMondayAPI\MondayAPI\ObjectTypes\SubItem;
+use Galata\LaravelMondayAPI\MondayAPI\ObjectTypes\Board;
+use Galata\LaravelMondayAPI\MondayAPI\ObjectTypes\Column;
+use Galata\LaravelMondayAPI\MondayAPI\ObjectTypes\BoardKind;
 
 class MondayBoard extends MondayAPI
 {

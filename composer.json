@@ -1,6 +1,6 @@
 {
   "name" : "galata/laravel-monday-api",
-  "description" : "Monday v2 API developed by TBLACK-IT and Fork by Gálata",
+  "description" : "Monday v2 API developed by Marcio da Gálata",
   "authors": [
     {
         "name": "Marcio Nobrega",
@@ -12,8 +12,18 @@
   },
   "autoload" : {
     "psr-4" : {
-      "Galata\\MondayAPI\\": "src/MondayAPI"
+      "Galata\\LaravelMondayAPI\\": "src"
     }
   },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Galata\\LaravelMondayAPI\\MondayServiceProvider"
+            ],
+            "aliases": {
+                "Monday": "Galata\\LaravelMondayAPI\\MondayFacade"
+            }
+        }
+    },
   "license": "LGPL-2.1-only"
 }

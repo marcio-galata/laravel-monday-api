@@ -1,6 +1,6 @@
 <?php
 
-namespace TBlack\MondayAPI\ObjectTypes;
+namespace Galata\LaravelMondayAPI\MondayAPI\ObjectTypes;
 
 class Update extends ObjectModel
 {

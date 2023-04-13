@@ -1,8 +1,8 @@
 <?php
 
-namespace TBlack\MondayAPI\ObjectTypes;
+namespace Galata\LaravelMondayAPI\MondayAPI\ObjectTypes;
 
-use TBlack\MondayAPI\Querying\Query;
+use Galata\LaravelMondayAPI\MondayAPI\Querying\Query;
 
 class ObjectModel
 {

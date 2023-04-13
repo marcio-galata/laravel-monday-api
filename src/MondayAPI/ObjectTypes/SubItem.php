@@ -1,8 +1,8 @@
 <?php
 
-namespace TBlack\MondayAPI\ObjectTypes;
+namespace Galata\LaravelMondayAPI\MondayAPI\ObjectTypes;
 
-use TBlack\MondayAPI\ObjectTypes\ObjectModel;
+use Galata\LaravelMondayAPI\MondayAPI\ObjectTypes\ObjectModel;
 
 class SubItem extends ObjectModel
 {

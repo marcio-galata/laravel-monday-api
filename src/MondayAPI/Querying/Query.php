@@ -1,6 +1,6 @@
 <?php
 
-namespace TBlack\MondayAPI\Querying;
+namespace Galata\LaravelMondayAPI\MondayAPI\Querying;
 
 class Query
 {
